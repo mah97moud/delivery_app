@@ -1,0 +1,35 @@
+name: delivery_app
+description: A new Flutter project.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_screenutil: ^5.9.0
+  splash:
+    path: packages/splash
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets: 
+    - /Users/hager/Desktop/Delivery/delivery_app/assets/
+
+  fonts:
+    - family: SF-Pro-Display
+      fonts:
+        - asset: assets/fonts/SF-Pro-Display/SF-Pro-Display-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/SF-Pro-Display/sf-pro-text-semibold.ttf
+          weight: 600
+        - asset: assets/fonts/SF-Pro-Display/SF-Pro-Display-Regular.ttf
+          weight: 400
