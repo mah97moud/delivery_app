@@ -6,12 +6,12 @@ class SliverCustomAppBar extends StatelessWidget {
   const SliverCustomAppBar({
     super.key,
     this.bottomChild,
-  }); 
+  });
   final Widget? bottomChild;
 
   @override
   Widget build(BuildContext context) {
-    return   SliverAppBar.medium(
+    return SliverAppBar.medium(
       title: const AppBarTitleText('Categories'),
       bottom: PreferredSize(
         preferredSize: const Size.fromHeight(80),

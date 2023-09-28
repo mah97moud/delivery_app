@@ -12,9 +12,7 @@ class SplashBgImage extends StatelessWidget {
       padding: EdgeInsets.zero,
       decoration: const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(AppAssets.splashBg),
-          fit: BoxFit.cover
-        ),
+            image: AssetImage(AppAssets.splashBg), fit: BoxFit.cover),
       ),
     );
   }

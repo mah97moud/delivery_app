@@ -24,9 +24,8 @@ class PrimaryBotton extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           foregroundColor: AppColors.white,
           backgroundColor: AppColors.primaryButton,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10.0)
-          ),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
         ),
         child: Text(
           'ORDER NOW',
