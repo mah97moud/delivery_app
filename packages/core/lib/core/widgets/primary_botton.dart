@@ -19,7 +19,7 @@ class PrimaryBotton extends StatelessWidget {
       height: AppSizes.primaryBtnHeight,
       child: ElevatedButton(
         onPressed: () {
-          context.goNamed(RoutesNames.categories);
+          context.pushNamed(RoutesNames.categories);
         },
         style: ElevatedButton.styleFrom(
           foregroundColor: AppColors.white,
