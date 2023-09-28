@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:equatable/equatable.dart';
 
 class CategoryModel extends Equatable {
@@ -5,20 +7,35 @@ class CategoryModel extends Equatable {
   final String title;
   final int count;
 
-  const CategoryModel(
-      {required this.image, required this.title, required this.count});
+  const CategoryModel({
+    required this.image,
+    required this.title,
+    required this.count,
+  });
 
-  factory CategoryModel.fromJson(Map<String, dynamic> json) => CategoryModel(
-        image: json['image'] as String,
-        title: json['title'] as String,
-        count: json['count'] as int,
+  factory CategoryModel.fromMap(Map<String, dynamic> data) => CategoryModel(
+        image: data['image'] as String,
+        title: data['title'] as String,
+        count: data['count'] as int,
       );
 
-  Map<String, dynamic> toJson() => {
+  Map<String, dynamic> toMap() => {
         'image': image,
         'title': title,
         'count': count,
       };
+
+  /// `dart:convert`
+  ///
+  /// Parses the string and returns the resulting Json object as [CategoryModel].
+  factory CategoryModel.fromJson(String data) {
+    return CategoryModel.fromMap(json.decode(data) as Map<String, dynamic>);
+  }
+
+  /// `dart:convert`
+  ///
+  /// Converts [CategoryModel] to a JSON string.
+  String toJson() => json.encode(toMap());
 
   CategoryModel copyWith({
     String? image,

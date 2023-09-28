@@ -5,14 +5,16 @@ class AppBarTitleText extends StatelessWidget {
   const AppBarTitleText(
     this.title, {
     super.key,
+    this.style,
   });
   final String? title;
+  final TextStyle? style;
 
   @override
   Widget build(BuildContext context) {
     return Text(
       title ?? '',
-      style: StylesManager.textStyle34,
+      style: style ?? StylesManager.textStyle34,
     );
   }
 }

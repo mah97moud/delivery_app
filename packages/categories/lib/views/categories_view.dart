@@ -1,5 +1,5 @@
 import 'package:categories/data/category_model.dart';
-import 'package:categories/views/widgets/category_card.dart';
+import 'package:categories/views/widgets/categories_grid_view.dart';
 import 'package:categories/views/widgets/sliver_custom_app_bar.dart';
 import 'package:core/core/utils/app_assets.dart';
 import 'package:flutter/material.dart';
@@ -26,28 +26,8 @@ class _CategoriesViewState extends State<CategoriesView> {
     return Scaffold(
       body: CustomScrollView(
         slivers: [
-          const SliverCustomAppBar(),
-          SliverFillRemaining(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0),
-              child: GridView.builder(
-                shrinkWrap: true,
-                physics: const BouncingScrollPhysics(),
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                  mainAxisExtent: 230.0,
-                  mainAxisSpacing: 20.0,
-                ),
-                itemCount: _list.length,
-                itemBuilder: (context, index) {
-                  final category = _list[index];
-                  return CategoryCard(
-                    category: category,
-                  );
-                },
-              ),
-            ),
-          ),
+          const SliverCustomAppBar('Categories'),
+          CategoriesGridView(list: _list),
         ],
       ),
     );

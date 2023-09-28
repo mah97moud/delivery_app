@@ -3,4 +3,5 @@ sealed class RoutesNames {
 
   static const splash = 'splash';
   static const categories = 'categories';
+  static const category = 'category';
 }
