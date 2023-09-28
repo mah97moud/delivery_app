@@ -1,8 +1,10 @@
+import 'package:core/core/routes/route_names.dart';
 import 'package:core/core/utils/app_colors.dart';
 import 'package:core/core/utils/app_sizes.dart';
 import 'package:core/core/utils/styles_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class PrimaryBotton extends StatelessWidget {
   const PrimaryBotton({
@@ -16,7 +18,9 @@ class PrimaryBotton extends StatelessWidget {
       width: double.infinity,
       height: AppSizes.primaryBtnHeight,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          context.goNamed(RoutesNames.categories);
+        },
         style: ElevatedButton.styleFrom(
           foregroundColor: AppColors.white,
           backgroundColor: AppColors.primaryButton,

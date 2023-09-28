@@ -12,16 +12,18 @@ dependencies:
   flutter_screenutil: ^5.9.0
   splash:
     path: packages/splash
+  core:
+    path: packages/core
 
 dev_dependencies:
+  flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
 
-  assets: 
+  assets:
     - /Users/hager/Desktop/Delivery/delivery_app/assets/
 
   fonts:

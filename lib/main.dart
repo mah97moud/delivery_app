@@ -1,6 +1,6 @@
+import 'package:core/core/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:splash/splash.dart';
 
 Future<void> main() async {
   await ScreenUtil.ensureScreenSize();
@@ -14,10 +14,10 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(414, 896),
-      child: MaterialApp(
+      child: MaterialApp.router(
         debugShowCheckedModeBanner: false,
         theme: ThemeData.light().copyWith(),
-        home: const SplashView(),
+        routerConfig: AppRoutes.router,
       ),
     );
   }
