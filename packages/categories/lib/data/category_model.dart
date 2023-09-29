@@ -6,23 +6,27 @@ class CategoryModel extends Equatable {
   final String image;
   final String title;
   final int count;
+  final String categoryType;
 
   const CategoryModel({
     required this.image,
     required this.title,
     required this.count,
+    required this.categoryType,
   });
 
   factory CategoryModel.fromMap(Map<String, dynamic> data) => CategoryModel(
         image: data['image'] as String,
         title: data['title'] as String,
         count: data['count'] as int,
+        categoryType: data['categoryType'] as String,
       );
 
   Map<String, dynamic> toMap() => {
         'image': image,
         'title': title,
         'count': count,
+        'categoryType': categoryType,
       };
 
   /// `dart:convert`
@@ -41,11 +45,13 @@ class CategoryModel extends Equatable {
     String? image,
     String? title,
     int? count,
+    String? categoryType,
   }) {
     return CategoryModel(
       image: image ?? this.image,
       title: title ?? this.title,
       count: count ?? this.count,
+      categoryType: categoryType ?? this.categoryType,
     );
   }
 
@@ -53,5 +59,5 @@ class CategoryModel extends Equatable {
   bool get stringify => true;
 
   @override
-  List<Object?> get props => [image, title, count];
+  List<Object?> get props => [image, title, count, categoryType];
 }

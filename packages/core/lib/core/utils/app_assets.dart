@@ -15,7 +15,12 @@ sealed class AppAssets {
   static const drinks = '$_assetPath/drinks.png';
   static const fruits = '$_assetPath/fruits.png';
   static const vegetables = '$_assetPath/vegetables.png';
+  static const apple = '$_assetPath/apple.png';
+  static const drinksBg = '$_assetPath/drinks-bg.png';
+  static const pastaBg = '$_assetPath/pasta-bg.png';
   static const pasta = '$_assetPath/pasta.png';
+  static const breadBg = '$_assetPath/bread-bg.png';
+  static const cupcake = '$_assetPath/cupcake.png';
   static const sweets = '$_assetPath/sweets.png';
   static const test = '$_assetPath/test.png';
   static const bike = '$_iconsPath/bike.svg';

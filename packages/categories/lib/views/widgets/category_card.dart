@@ -28,13 +28,10 @@ class CategoryCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
-            Hero(
-              tag: category.title,
-              child: Image.asset(
-                category.image,
-                height: 140.0,
-                fit: BoxFit.cover,
-              ),
+            Image.asset(
+              category.image,
+              height: 140.0,
+              fit: BoxFit.cover,
             ),
             AppSizedBoxed.sizedBoxH10,
             Padding(

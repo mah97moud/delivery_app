@@ -1,7 +1,6 @@
 import 'package:categories/data/category_model.dart';
 import 'package:categories/views/widgets/app_bar_title_text.dart';
 import 'package:categories/views/widgets/bottom_search_text_field.dart';
-import 'package:core/core/core.dart';
 import 'package:flutter/material.dart';
 
 class SliverCustomAppBar extends StatelessWidget {
@@ -30,13 +29,13 @@ class SliverCustomAppBar extends StatelessWidget {
         ),
         background: category != null
             ? Hero(
-              tag: category?.title ?? '',
-              child: Image.asset(
-                AppAssets.vegetables,
-                fit: BoxFit.fitHeight,
-                alignment: Alignment.centerRight,
-              ),
-            )
+                tag: category?.title ?? '',
+                child: Image.asset(
+                  category?.categoryType ?? '',
+                  fit: BoxFit.fitHeight,
+                  alignment: Alignment.centerRight,
+                ),
+              )
             : null,
       ),
       bottom: PreferredSize(

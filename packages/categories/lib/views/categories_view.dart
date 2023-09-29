@@ -13,12 +13,42 @@ class CategoriesView extends StatefulWidget {
 
 class _CategoriesViewState extends State<CategoriesView> {
   final _list = <CategoryModel>[
-    const CategoryModel(image: AppAssets.test, title: 'Vegetables', count: 43),
-    const CategoryModel(image: AppAssets.fruits, title: 'Fruits', count: 32),
-    const CategoryModel(image: AppAssets.bread, title: 'Bread', count: 22),
-    const CategoryModel(image: AppAssets.sweets, title: 'Sweets', count: 56),
-    const CategoryModel(image: AppAssets.pasta, title: 'Pasta', count: 25),
-    const CategoryModel(image: AppAssets.drinks, title: 'Drinks', count: 10),
+    const CategoryModel(
+      image: AppAssets.test,
+      title: 'Vegetables',
+      count: 43,
+      categoryType: AppAssets.vegetables,
+    ),
+    const CategoryModel(
+      image: AppAssets.fruits,
+      title: 'Fruits',
+      count: 32,
+      categoryType: AppAssets.apple,
+    ),
+    const CategoryModel(
+      image: AppAssets.bread,
+      title: 'Bread',
+      count: 22,
+      categoryType: AppAssets.breadBg,
+    ),
+    const CategoryModel(
+      image: AppAssets.sweets,
+      title: 'Sweets',
+      count: 56,
+      categoryType: AppAssets.cupcake,
+    ),
+    const CategoryModel(
+      image: AppAssets.pasta,
+      title: 'Pasta',
+      count: 25,
+      categoryType: AppAssets.pastaBg,
+    ),
+    const CategoryModel(
+      image: AppAssets.drinks,
+      title: 'Drinks',
+      count: 10,
+      categoryType: AppAssets.drinksBg,
+    ),
   ];
 
   @override
