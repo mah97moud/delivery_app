@@ -34,6 +34,10 @@ abstract class StylesManager {
     fontSize: 15,
     fontWeight: FontWeight.w400,
   );
+  static TextStyle textStyle14 = const TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+  );
   static TextStyle textStyle12 = const TextStyle(
     fontFamily: 'SF-Pro-Text',
     fontSize: 12,

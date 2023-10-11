@@ -1,4 +1,5 @@
 import 'package:categories/data/category_model.dart';
+import 'package:categories/views/widgets/category_filter_widget.dart';
 import 'package:core/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -21,6 +22,7 @@ class CategoryView extends StatelessWidget {
             category: category,
             style: StylesManager.textStyle30,
           ),
+          const CategoryFilterWidget(),
         ],
       ),
     );
