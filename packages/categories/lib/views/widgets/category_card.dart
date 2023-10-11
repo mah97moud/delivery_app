@@ -19,7 +19,7 @@ class CategoryCard extends StatelessWidget {
         onTap: () {
           context.goNamed(
             RoutesNames.category,
-            pathParameters: {
+            queryParameters: {
               'category': category.toJson(),
             },
           );

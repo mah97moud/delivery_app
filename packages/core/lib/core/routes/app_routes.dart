@@ -1,5 +1,4 @@
 import 'package:categories/categories.dart';
-import 'package:categories/views/category_view.dart';
 import 'package:core/core/routes/route_names.dart';
 import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
@@ -13,6 +12,7 @@ class AppRoutes {
   static GoRouter get router => _router;
 
   static final _router = GoRouter(
+    debugLogDiagnostics: true,
     routes: [
       GoRoute(
         path: '/',
@@ -27,7 +27,7 @@ class AppRoutes {
         ),
         routes: [
           GoRoute(
-            path: 'category/:category',
+            path: 'category',
             name: RoutesNames.category,
             pageBuilder: (context, state) {
               return CustomTransitionPage(
@@ -45,6 +45,28 @@ class AppRoutes {
                 },
               );
             },
+            routes: [
+              GoRoute(
+                path: 'categoryItem',
+                name: RoutesNames.categoryItem,
+                pageBuilder: (context, state) {
+                  return CustomTransitionPage(
+                    key: state.pageKey,
+                    transitionDuration: const Duration(milliseconds: 500),
+                    child: const CategoryItemView(),
+                    transitionsBuilder:
+                        (context, animation, secondaryAnimation, child) {
+                      return FadeTransition(
+                        opacity: CurveTween(
+                          curve: Curves.easeInOutCirc,
+                        ).animate(animation),
+                        child: child,
+                      );
+                    },
+                  );
+                },
+              ),
+            ],
           ),
         ],
       ),

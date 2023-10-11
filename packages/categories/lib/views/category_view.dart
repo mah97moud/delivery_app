@@ -14,7 +14,7 @@ class CategoryView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final category = CategoryModel.fromJson(
-      GoRouterState.of(context).pathParameters['category'] as String,
+      GoRouterState.of(context).uri.queryParameters['category'] as String,
     );
 
     const items = [
