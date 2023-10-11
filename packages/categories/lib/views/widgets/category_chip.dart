@@ -16,9 +16,7 @@ class CategoryChip extends StatelessWidget {
     return InkWell(
       onTap: () {},
       borderRadius: BorderRadius.circular(20.0),
-      
       child: Chip(
-        
         backgroundColor:
             isSelected ? AppColors.selectedBgViolet : AppColors.white,
         shape: RoundedRectangleBorder(
@@ -34,7 +32,8 @@ class CategoryChip extends StatelessWidget {
               )
             : null,
         labelStyle: isSelected
-            ? StylesManager.textStyle14.copyWith(color: AppColors.selectedViolet)
+            ? StylesManager.textStyle14
+                .copyWith(color: AppColors.selectedViolet)
             : StylesManager.textStyle14.copyWith(
                 color: AppColors.textSecondary,
                 fontWeight: FontWeight.w400,

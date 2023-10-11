@@ -6,6 +6,7 @@ sealed class AppColors {
   static const primaryColor = Color(0xFF2D0C57);
   static const primaryBgColor = Color(0xFFA259FF);
   static const greyColor = Color(0xFFF6F5F5);
+  static const redColor = Color.fromARGB(255, 175, 18, 18);
   static const Color textPrimary = Color(0xff2d0c57);
 
   static const Color textSecondary = Color(0xff9586a8);

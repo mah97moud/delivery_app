@@ -9,28 +9,37 @@ import 'package:go_router/go_router.dart';
 class PrimaryBotton extends StatelessWidget {
   const PrimaryBotton({
     super.key,
+    this.icon,
+    this.tilte,
+    this.bgColor,
+    this.fgColor,
   });
 
+  final Widget? icon;
+  final String? tilte;
+  final Color? bgColor;
+  final Color? fgColor;
+ 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 20.0.w),
-      width: double.infinity,
       height: AppSizes.primaryBtnHeight,
       child: ElevatedButton(
         onPressed: () {
           context.pushNamed(RoutesNames.categories);
         },
         style: ElevatedButton.styleFrom(
-          foregroundColor: AppColors.white,
-          backgroundColor: AppColors.primaryButton,
+          foregroundColor: fgColor ?? AppColors.white,
+          backgroundColor: bgColor ?? AppColors.primaryButton,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
         ),
-        child: Text(
-          'ORDER NOW',
-          style: StylesManager.textStyle15,
-        ),
+        child: icon ??
+            Text(
+              tilte ?? 'ORDER NOW',
+              style: StylesManager.textStyle15,
+            ),
       ),
     );
   }

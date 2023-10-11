@@ -23,6 +23,9 @@ sealed class AppAssets {
   static const cupcake = '$_assetPath/cupcake.png';
   static const sweets = '$_assetPath/sweets.png';
   static const test = '$_assetPath/test.png';
+  static const c1 = '$_assetPath/c1.png';
+  static const c2 = '$_assetPath/c2.png';
+  static const c3 = '$_assetPath/c3.png';
   static const bike = '$_iconsPath/bike.svg';
   static const camera = '$_iconsPath/camera.svg';
   static const check = '$_iconsPath/check.svg';

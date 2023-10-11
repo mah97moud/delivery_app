@@ -17,6 +17,12 @@ abstract class StylesManager {
     fontSize: 30,
     fontWeight: FontWeight.w700,
   );
+  static TextStyle textStyle16 = const TextStyle(
+    fontFamily: 'SF-Pro-Text',
+    color: AppColors.textSecondary,
+    fontSize: 17,
+    fontWeight: FontWeight.w400,
+  );
   static TextStyle textStyle17 = const TextStyle(
     fontFamily: 'SF-Pro-Text',
     color: AppColors.textSecondary,
@@ -27,6 +33,12 @@ abstract class StylesManager {
     fontFamily: 'SF-Pro-Text',
     color: AppColors.textPrimary,
     fontSize: 18,
+    fontWeight: FontWeight.w700,
+  );
+  static TextStyle textStyle22 = const TextStyle(
+    fontFamily: 'SF-Pro-Text',
+    color: AppColors.textPrimary,
+    fontSize: 22,
     fontWeight: FontWeight.w700,
   );
   static TextStyle textStyle15 = const TextStyle(
