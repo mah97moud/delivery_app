@@ -5,4 +5,7 @@ sealed class RoutesNames {
   static const categories = 'categories';
   static const category = 'category';
   static const categoryItem = 'categoryItem';
+  static const cart = 'cart';
+  static const profile = 'profile';
+
 }
