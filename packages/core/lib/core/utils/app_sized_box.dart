@@ -6,6 +6,9 @@ sealed class AppSizedBoxed {
   static const sizedBoxWInfinity = SizedBox(
     width: double.infinity,
   );
+  static const sizedBoxH56 = SizedBox(
+    height: 56.0,
+  );
   static const sizedBoxH48 = SizedBox(
     height: 48.0,
   );
@@ -24,6 +27,9 @@ sealed class AppSizedBoxed {
   static const sizedBoxH10 = SizedBox(
     height: 10.0,
   );
+  static const sizedBoxH8 = SizedBox(
+    height: 8.0,
+  );
   static const sizedBoxW48 = SizedBox(
     width: 48.0,
   );
@@ -41,5 +47,8 @@ sealed class AppSizedBoxed {
   );
   static const sizedBoxW10 = SizedBox(
     width: 10.0,
+  );
+  static const sizedBoxW5 = SizedBox(
+    width: 5.0,
   );
 }

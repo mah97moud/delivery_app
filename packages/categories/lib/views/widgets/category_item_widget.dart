@@ -1,4 +1,5 @@
 import 'package:categories/data/category_item_model.dart';
+import 'package:categories/views/widgets/item_price_widget.dart';
 import 'package:core/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -67,18 +68,7 @@ class CategoryItemWidget extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        item.price?.toString() ?? '',
-                        style: StylesManager.textStyle22,
-                      ),
-                      Text(
-                        '€ / piece',
-                        style: StylesManager.textStyle16,
-                      )
-                    ],
-                  ),
+                  ItemPriceWidget(item: item),
                   const Spacer(),
                   Row(
                     children: [

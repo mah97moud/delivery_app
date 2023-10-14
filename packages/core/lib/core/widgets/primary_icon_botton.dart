@@ -1,5 +1,4 @@
-import 'package:core/core/utils/app_colors.dart';
-import 'package:core/core/utils/app_sizes.dart';
+import 'package:core/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -33,12 +32,27 @@ class AppIconBotton extends StatelessWidget {
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
         ),
-        child: SvgPicture.asset(
-          svgPath,
-          width: 20.0,
-          height: 20.0,
-          colorFilter:
-              ColorFilter.mode(fgColor ?? Colors.white, BlendMode.srcIn),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SvgPicture.asset(
+              svgPath,
+              width: 20.0,
+              height: 20.0,
+              colorFilter:
+                  ColorFilter.mode(fgColor ?? Colors.white, BlendMode.srcIn),
+            ),
+            if (tilte != null)
+              Padding(
+                padding: const EdgeInsets.only(
+                  left: 16.0,
+                ),
+                child: Text(
+                  tilte ?? '',
+                  style: StylesManager.textStyle15,
+                ),
+              ),
+          ],
         ),
       ),
     );
