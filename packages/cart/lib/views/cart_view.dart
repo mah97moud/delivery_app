@@ -3,6 +3,7 @@ import 'package:categories/categories.dart';
 import 'package:categories/data/category_item_model.dart';
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class CartView extends StatelessWidget {
   const CartView({super.key});
@@ -44,7 +45,9 @@ class CartView extends StatelessWidget {
           const CartItemsView(items: items),
           SliverToBoxAdapter(
             child: PrimaryBotton(
-              onPressed: () {},
+              onPressed: () {
+                context.pushNamed(RoutesNames.checkout);
+              },
               tilte: 'CHECKOUT',
             ),
           ),

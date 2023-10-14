@@ -31,7 +31,7 @@ sealed class AppAssets {
   static const check = '$_iconsPath/check.svg';
   static const chevronLeft = '$_iconsPath/chevron-left.svg';
   static const creditCard = '$_iconsPath/credit-card.svg';
-  static const drone = '$_iconsPath/drone.svg';
+  static const drone = '$_iconsPath/Drone.svg';
   static const grid = '$_iconsPath/grid.svg';
   static const heart = '$_iconsPath/heart.svg';
   static const home = '$_iconsPath/home.svg';
