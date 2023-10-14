@@ -1,10 +1,8 @@
-import 'package:core/core/routes/route_names.dart';
 import 'package:core/core/utils/app_colors.dart';
 import 'package:core/core/utils/app_sizes.dart';
 import 'package:core/core/utils/styles_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
 
 class PrimaryBotton extends StatelessWidget {
   const PrimaryBotton({
@@ -13,12 +11,14 @@ class PrimaryBotton extends StatelessWidget {
     this.tilte,
     this.bgColor,
     this.fgColor,
+    required this.onPressed,
   });
 
   final Widget? icon;
   final String? tilte;
   final Color? bgColor;
   final Color? fgColor;
+  final VoidCallback? onPressed;
  
   @override
   Widget build(BuildContext context) {
@@ -26,9 +26,7 @@ class PrimaryBotton extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 20.0.w),
       height: AppSizes.primaryBtnHeight,
       child: ElevatedButton(
-        onPressed: () {
-          context.goNamed(RoutesNames.categories);
-        },
+        onPressed: onPressed,
         style: ElevatedButton.styleFrom(
           foregroundColor: fgColor ?? AppColors.white,
           backgroundColor: bgColor ?? AppColors.primaryButton,

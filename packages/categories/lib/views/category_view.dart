@@ -1,12 +1,10 @@
 import 'package:categories/data/category_model.dart';
-import 'package:categories/views/widgets/category_filter_widget.dart';
-import 'package:categories/views/widgets/category_item_widget.dart';
 import 'package:core/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../categories.dart';
 import '../data/category_item_model.dart';
-import 'widgets/sliver_custom_app_bar.dart';
 
 class CategoryView extends StatelessWidget {
   const CategoryView({Key? key}) : super(key: key);

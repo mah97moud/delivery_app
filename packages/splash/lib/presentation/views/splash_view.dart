@@ -1,9 +1,7 @@
-import 'package:core/core/utils/app_colors.dart';
-import 'package:core/core/utils/app_sized_box.dart';
-import 'package:core/core/utils/styles_manager.dart';
-import 'package:core/core/widgets/primary_botton.dart';
+import 'package:core/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:splash/presentation/views/widgets/app_logo.dart';
 import 'package:splash/presentation/views/widgets/box_widget.dart';
 import 'package:splash/presentation/views/widgets/splash_bg_image.dart';
@@ -53,7 +51,11 @@ class SplashView extends StatelessWidget {
                       ),
                     ),
                     AppSizedBoxed.sizedBoxH48,
-                    const PrimaryBotton(),
+                    PrimaryBotton(
+                      onPressed: () {
+                        context.goNamed(RoutesNames.categories);
+                      },
+                    ),
                     AppSizedBoxed.sizedBoxH32,
                     TextButton(
                       onPressed: () {},
