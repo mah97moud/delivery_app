@@ -2,6 +2,7 @@ import 'package:cart/views/widgets/checkout_cell_row.dart';
 import 'package:cart/views/widgets/checkout_title_row.dart';
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class CheckoutView extends StatelessWidget {
   const CheckoutView({Key? key}) : super(key: key);
@@ -28,7 +29,9 @@ class CheckoutView extends StatelessWidget {
           children: [
             CheckoutTitleRow(
               'Payment Method',
-              onPressed: () {},
+              onPressed: () {
+                context.goNamed(RoutesNames.payment);
+              },
             ),
             const CheckoutCellRow(
               '**** **** **** 4747',

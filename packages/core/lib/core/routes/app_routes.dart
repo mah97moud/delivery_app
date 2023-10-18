@@ -5,6 +5,7 @@ import 'package:core/core/routes/route_names.dart';
 import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
 import 'package:home/home.dart';
+import 'package:payment/views/payment_view.dart';
 import 'package:profile/profile.dart';
 import 'package:splash/splash.dart';
 
@@ -103,26 +104,55 @@ class AppRoutes {
                 ),
                 routes: [
                   GoRoute(
-                    path: 'checkout',
-                    name: RoutesNames.checkout,
-                    parentNavigatorKey: _rootNavigatorKey,
-                    pageBuilder: (context, state) {
-                      return CustomTransitionPage(
-                        key: state.pageKey,
-                        transitionDuration: const Duration(milliseconds: 500),
-                        child: const CheckoutView(),
-                        transitionsBuilder:
-                            (context, animation, secondaryAnimation, child) {
-                          return FadeTransition(
-                            opacity: CurveTween(
-                              curve: Curves.easeInOutCirc,
-                            ).animate(animation),
-                            child: child,
-                          );
-                        },
-                      );
-                    },
-                  ),
+                      path: 'checkout',
+                      name: RoutesNames.checkout,
+                      parentNavigatorKey: _rootNavigatorKey,
+                      pageBuilder: (context, state) {
+                        return CustomTransitionPage(
+                          key: state.pageKey,
+                          transitionDuration: const Duration(milliseconds: 500),
+                          child: const CheckoutView(),
+                          transitionsBuilder:
+                              (context, animation, secondaryAnimation, child) {
+                            return FadeTransition(
+                              opacity: CurveTween(
+                                curve: Curves.easeInOutCirc,
+                              ).animate(animation),
+                              child: child,
+                            );
+                          },
+                        );
+                      },
+                      routes: [
+                        GoRoute(
+                          path: 'payment',
+                          name: RoutesNames.payment,
+                          parentNavigatorKey: _rootNavigatorKey,
+                          pageBuilder: (context, state) {
+                            return CustomTransitionPage(
+                              key: state.pageKey,
+                              transitionDuration:
+                                  const Duration(milliseconds: 300),
+                              child: const PaymentView(),
+                              transitionsBuilder: (context, animation,
+                                  secondaryAnimation, child) {
+                                return SlideTransition(
+                                  position: Tween<Offset>(
+                                          begin: const Offset(-1, 0),
+                                          end: Offset.zero)
+                                      .animate(
+                                    CurvedAnimation(
+                                      parent: animation,
+                                      curve: Curves.elasticIn,
+                                    ),
+                                  ),
+                                  child: child,
+                                );
+                              },
+                            );
+                          },
+                        ),
+                      ]),
                 ],
               ),
             ],
