@@ -13,6 +13,7 @@ dependencies:
     sdk: flutter
   core: 
     path: /Users/hager/Desktop/Delivery/delivery_app/packages/core
+  flutter_svg: ^2.0.7
 
 dev_dependencies:
   flutter_test:

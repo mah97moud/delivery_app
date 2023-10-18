@@ -12,6 +12,9 @@ sealed class AppSizedBoxed {
   static const sizedBoxH48 = SizedBox(
     height: 48.0,
   );
+  static const sizedBoxH47 = SizedBox(
+    height: 47.0,
+  );
   static const sizedBoxH32 = SizedBox(
     height: 32.0,
   );

@@ -11,6 +11,7 @@ sealed class AppAssets {
   static const logo = '$_svgsPath/logo.svg';
   static const box = '$_svgsPath/box.svg';
   static const splashBg = '$_assetPath/splash_bg.png';
+  static const mcSymbol = '$_iconsPath/mc-symbol.svg';
   static const bread = '$_assetPath/bread.png';
   static const drinks = '$_assetPath/drinks.png';
   static const fruits = '$_assetPath/fruits.png';

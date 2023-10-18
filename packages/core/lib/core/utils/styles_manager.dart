@@ -18,6 +18,10 @@ abstract class StylesManager {
     fontWeight: FontWeight.w700,
   );
 
+  /// font size 30
+  /// font weight 700
+  /// color text primary
+  /// font family SF Pro Display
   static TextStyle textStyle30 = const TextStyle(
     fontFamily: 'SF-Pro-Display',
     color: AppColors.textPrimary,
@@ -32,8 +36,20 @@ abstract class StylesManager {
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle textStyle16 = const TextStyle(
+  /// font size 26
+  /// font weight 500
+  /// color text white
+  /// font family SF Pro Display
+
+  static TextStyle textStyle26 = const TextStyle(
     fontFamily: 'SF-Pro-Text',
+    color: AppColors.white,
+    fontSize: 26,
+    fontWeight: FontWeight.w500,
+  );
+
+  static TextStyle textStyle16 = const TextStyle(
+    fontFamily: 'SF-Pro-Display',
     color: AppColors.textSecondary,
     fontSize: 17,
     fontWeight: FontWeight.w400,
@@ -50,12 +66,22 @@ abstract class StylesManager {
     fontWeight: FontWeight.w400,
   );
 
-
   static TextStyle textStyle18 = const TextStyle(
     fontFamily: 'SF-Pro-Text',
     color: AppColors.textPrimary,
     fontSize: 18,
     fontWeight: FontWeight.w700,
+  );
+
+  /// font size 20
+  /// font weight 500
+  /// color text primary
+  /// font family SF Pro Text
+  static TextStyle textStyle20 = const TextStyle(
+    fontFamily: 'SF-Pro-Display',
+    color: AppColors.white,
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
   );
 
   /// font size 22
@@ -72,8 +98,7 @@ abstract class StylesManager {
   /// font size 15
   /// font weight 400
   /// font family SF Pro Text
-  static TextStyle 
-  textStyle15 = const TextStyle(
+  static TextStyle textStyle15 = const TextStyle(
     fontFamily: 'SF-Pro-Text',
     fontSize: 15,
     fontWeight: FontWeight.w400,
