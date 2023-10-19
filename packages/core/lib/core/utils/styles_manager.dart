@@ -4,15 +4,19 @@ import 'package:flutter/material.dart';
 abstract class StylesManager {
   StylesManager._();
 
+  static const sfProDisplayFont =  'SF-Pro-Display';
+  static const sfProTextFont =  'SF-Pro-Text'
+;
+
   static TextStyle textStyle34 = const TextStyle(
-    fontFamily: 'SF-Pro-Display',
+    fontFamily: sfProDisplayFont,
     color: AppColors.textPrimary,
     fontSize: 34,
     fontWeight: FontWeight.w700,
   );
 
   static TextStyle textStyle32 = const TextStyle(
-    fontFamily: 'SF-Pro-Text',
+    fontFamily: sfProTextFont,
     color: AppColors.textPrimary,
     fontSize: 32,
     fontWeight: FontWeight.w700,
@@ -23,7 +27,7 @@ abstract class StylesManager {
   /// color text primary
   /// font family SF Pro Display
   static TextStyle textStyle30 = const TextStyle(
-    fontFamily: 'SF-Pro-Display',
+    fontFamily: sfProDisplayFont,
     color: AppColors.textPrimary,
     fontSize: 30,
     fontWeight: FontWeight.w700,
@@ -42,14 +46,14 @@ abstract class StylesManager {
   /// font family SF Pro Display
 
   static TextStyle textStyle26 = const TextStyle(
-    fontFamily: 'SF-Pro-Text',
+    fontFamily: sfProTextFont,
     color: AppColors.white,
     fontSize: 26,
     fontWeight: FontWeight.w500,
   );
 
   static TextStyle textStyle16 = const TextStyle(
-    fontFamily: 'SF-Pro-Display',
+    fontFamily: sfProDisplayFont,
     color: AppColors.textSecondary,
     fontSize: 17,
     fontWeight: FontWeight.w400,
@@ -60,14 +64,14 @@ abstract class StylesManager {
   /// color text secondary
   /// font family SF Pro Text
   static TextStyle textStyle17 = const TextStyle(
-    fontFamily: 'SF-Pro-Text',
+    fontFamily: sfProTextFont,
     color: AppColors.textSecondary,
     fontSize: 17,
     fontWeight: FontWeight.w400,
   );
 
   static TextStyle textStyle18 = const TextStyle(
-    fontFamily: 'SF-Pro-Text',
+    fontFamily: sfProTextFont,
     color: AppColors.textPrimary,
     fontSize: 18,
     fontWeight: FontWeight.w700,
@@ -78,7 +82,7 @@ abstract class StylesManager {
   /// color text primary
   /// font family SF Pro Text
   static TextStyle textStyle20 = const TextStyle(
-    fontFamily: 'SF-Pro-Display',
+    fontFamily: sfProDisplayFont,
     color: AppColors.white,
     fontSize: 20,
     fontWeight: FontWeight.w500,
@@ -89,7 +93,7 @@ abstract class StylesManager {
   /// color text primary
   /// font family SF Pro Text
   static TextStyle textStyle22 = const TextStyle(
-    fontFamily: 'SF-Pro-Text',
+    fontFamily: sfProTextFont,
     color: AppColors.textPrimary,
     fontSize: 22,
     fontWeight: FontWeight.w700,
@@ -99,7 +103,7 @@ abstract class StylesManager {
   /// font weight 400
   /// font family SF Pro Text
   static TextStyle textStyle15 = const TextStyle(
-    fontFamily: 'SF-Pro-Text',
+    fontFamily: sfProTextFont,
     fontSize: 15,
     fontWeight: FontWeight.w400,
   );
@@ -108,7 +112,7 @@ abstract class StylesManager {
     fontWeight: FontWeight.w500,
   );
   static TextStyle textStyle12 = const TextStyle(
-    fontFamily: 'SF-Pro-Text',
+    fontFamily: sfProTextFont,
     fontSize: 12,
     fontWeight: FontWeight.w400,
     color: AppColors.textSecondary,

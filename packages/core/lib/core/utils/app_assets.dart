@@ -11,7 +11,6 @@ sealed class AppAssets {
   static const logo = '$_svgsPath/logo.svg';
   static const box = '$_svgsPath/box.svg';
   static const splashBg = '$_assetPath/splash_bg.png';
-  static const mcSymbol = '$_iconsPath/mc-symbol.svg';
   static const bread = '$_assetPath/bread.png';
   static const drinks = '$_assetPath/drinks.png';
   static const fruits = '$_assetPath/fruits.png';
@@ -43,4 +42,8 @@ sealed class AppAssets {
   static const user = '$_iconsPath/user.svg';
   static const walking = '$_iconsPath/walking.svg';
   static const x = '$_iconsPath/x.svg';
+  static const mcSymbol = '$_iconsPath/mc-symbol.svg';
+  static const takeAPhotoIcon = '$_iconsPath/take-a-photo-icon.svg';
+  static const hint = '$_iconsPath/hint.svg';
+
 }

@@ -1,6 +1,8 @@
 import 'package:core/core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:payment/views/widgets/payment_form_section.dart';
+import 'package:payment/views/widgets/widgets.dart';
 
 class PaymentView extends StatelessWidget {
   const PaymentView({Key? key}) : super(key: key);
@@ -21,74 +23,36 @@ class PaymentView extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: SingleChildScrollView(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
-                'Credit / Debit card',
-                style: StylesManager.textStyle30,
-              ),
-              AppSizedBoxed.sizedBoxH20,
-              Stack(
-                alignment: Alignment.center,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Container(
-                    height: 240.0,
-                    width: 374.0,
-                    padding: const EdgeInsets.all(31),
-                    decoration: const BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [
-                            Color(0xFFB993D6),
-                            Color(0xFF8CA6DB),
-                          ],
-                        ),
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        SvgPicture.asset(
-                          AppAssets.mcSymbol,
-                        ),
-                        AppSizedBoxed.sizedBoxH25,
-                        Center(
-                          child: Text(
-                            '4747  4747  4747  4747',
-                            style: StylesManager.textStyle26,
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        AppSizedBoxed.sizedBoxH47,
-
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              'alexandra Smith'.toUpperCase(),
-                              style: StylesManager.textStyle20,
-                            ),
-                            Text(
-                              '07/2',
-                              style: StylesManager.textStyle20,
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                  Positioned(
-                    right: -70,
-                    top: -50,
-                    child: Container(
-                      width: 335.0,
-                      height: 335.0,
-                      decoration: const BoxDecoration(
-                        color: Color.fromRGBO(255, 255, 255, 0.12),
-                        shape: BoxShape.circle,
-                      ),
-                    ),
+                  Text(
+                    'Credit / Debit card',
+                    style: StylesManager.textStyle30,
                   ),
                 ],
               ),
+              AppSizedBoxed.sizedBoxH20,
+              const CreditOrDebitCardWidget(),
+              AppSizedBoxed.sizedBoxH24,
+              SvgPicture.asset(
+                AppAssets.takeAPhotoIcon,
+              ),
+              AppSizedBoxed.sizedBoxH13,
+              const PaymentFormSection(),
+              AppSizedBoxed.sizedBoxH56,
+              Row(
+                children: [
+                  Expanded(
+                    child: PrimaryBotton(
+                      onPressed: () {},
+                      tilte: 'use this card'.toUpperCase(),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),

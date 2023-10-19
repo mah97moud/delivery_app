@@ -14,6 +14,8 @@ sealed class AppColors {
   static const Color selectedBgViolet = Color(0xffe1caff);
 
   static const Color border = Color(0xffd8d0e3);
+  
+  static const Color formBorder = Color(0xffD9D0E3);
 
   static const Color background = Color(0xfff6f5f5);
 

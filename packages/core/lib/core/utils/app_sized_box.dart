@@ -21,11 +21,17 @@ sealed class AppSizedBoxed {
   static const sizedBoxH25 = SizedBox(
     height: 25.0,
   );
+  static const sizedBoxH24 = SizedBox(
+    height: 24.0,
+  );
   static const sizedBoxH20 = SizedBox(
     height: 20.0,
   );
   static const sizedBoxH16 = SizedBox(
     height: 16.0,
+  );
+  static const sizedBoxH13 = SizedBox(
+    height: 13.0,
   );
   static const sizedBoxH10 = SizedBox(
     height: 10.0,
@@ -41,6 +47,9 @@ sealed class AppSizedBoxed {
   );
   static const sizedBoxW25 = SizedBox(
     width: 25.0,
+  );
+  static const sizedBoxW22 = SizedBox(
+    width: 22.0,
   );
   static const sizedBoxW20 = SizedBox(
     width: 20.0,
