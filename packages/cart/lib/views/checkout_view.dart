@@ -1,8 +1,8 @@
-import 'package:cart/views/widgets/checkout_cell_row.dart';
-import 'package:cart/views/widgets/checkout_title_row.dart';
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+
+import 'views.dart';
 
 class CheckoutView extends StatelessWidget {
   const CheckoutView({Key? key}) : super(key: key);
@@ -37,6 +37,7 @@ class CheckoutView extends StatelessWidget {
               '**** **** **** 4747',
               iconPath: AppAssets.creditCard,
             ),
+            AppSizedBoxed.sizedBoxH32,
             CheckoutTitleRow(
               'Delivery address',
               onPressed: () {},
@@ -49,6 +50,7 @@ class CheckoutView extends StatelessWidget {
               'Latvia',
               iconPath: AppAssets.home,
             ),
+            AppSizedBoxed.sizedBoxH32,
             CheckoutTitleRow(
               'Delivery options',
               onPressed: () {},
@@ -64,6 +66,10 @@ class CheckoutView extends StatelessWidget {
             const CheckoutCellRow(
               'By Drone',
               iconPath: AppAssets.drone,
+            ),
+            AppSizedBoxed.sizedBoxH32,
+            const CustomRadioListTile(
+              'Non-Contant-delivery',
             ),
           ],
         ),

@@ -45,5 +45,6 @@ sealed class AppAssets {
   static const mcSymbol = '$_iconsPath/mc-symbol.svg';
   static const takeAPhotoIcon = '$_iconsPath/take-a-photo-icon.svg';
   static const hint = '$_iconsPath/hint.svg';
+  static const knob = '$_iconsPath/knob.svg';
 
 }

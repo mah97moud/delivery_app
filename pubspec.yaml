@@ -14,6 +14,7 @@ dependencies:
     path: packages/splash
   core:
     path: packages/core
+  flutter_animate: ^4.2.0+1
 
 dev_dependencies:
   flutter_lints: ^2.0.0
