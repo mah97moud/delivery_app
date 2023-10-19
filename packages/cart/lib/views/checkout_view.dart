@@ -1,5 +1,6 @@
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:go_router/go_router.dart';
 
 import 'views.dart';
@@ -32,15 +33,18 @@ class CheckoutView extends StatelessWidget {
               onPressed: () {
                 context.goNamed(RoutesNames.payment);
               },
+              animationDelay: 100.0,
             ),
             const CheckoutCellRow(
               '**** **** **** 4747',
               iconPath: AppAssets.creditCard,
+              animationDelay: 100.0,
             ),
             AppSizedBoxed.sizedBoxH32,
             CheckoutTitleRow(
               'Delivery address',
               onPressed: () {},
+              animationDelay: 200.0,
             ),
             const CheckoutCellRow(
               'Alexandra Smith'
@@ -49,28 +53,35 @@ class CheckoutView extends StatelessWidget {
               'LV–1012'
               'Latvia',
               iconPath: AppAssets.home,
+              animationDelay: 200.0,
             ),
             AppSizedBoxed.sizedBoxH32,
             CheckoutTitleRow(
               'Delivery options',
               onPressed: () {},
+              animationDelay: 300.0,
             ),
             const CheckoutCellRow(
               'I’ll pick it up myself',
               iconPath: AppAssets.walking,
+              animationDelay: 300.0,
             ),
             const CheckoutCellRow(
               'By courier',
               iconPath: AppAssets.bike,
+              animationDelay: 400.0,
             ),
             const CheckoutCellRow(
               'By Drone',
               iconPath: AppAssets.drone,
+              animationDelay: 500.0,
             ),
             AppSizedBoxed.sizedBoxH32,
             const CustomRadioListTile(
               'Non-Contant-delivery',
-            ),
+            ).animate().fade(
+                  delay: 600.ms,
+                ),
           ],
         ),
       ),
