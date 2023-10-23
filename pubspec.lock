@@ -28,14 +28,14 @@ packages:
   cart:
     dependency: transitive
     description:
-      path: "packages/cart"
+      path: "packages/features/cart"
       relative: true
     source: path
     version: "0.0.1"
   categories:
     dependency: transitive
     description:
-      path: "packages/categories"
+      path: "packages/features/categories"
       relative: true
     source: path
     version: "0.0.1"
@@ -66,8 +66,8 @@ packages:
   core:
     dependency: "direct main"
     description:
-      path: "/Users/hager/Desktop/Delivery/delivery_app/packages/core"
-      relative: false
+      path: "packages/features/core"
+      relative: true
     source: path
     version: "0.0.1"
   equatable:
@@ -144,7 +144,7 @@ packages:
   home:
     dependency: transitive
     description:
-      path: "packages/home"
+      path: "packages/features/home"
       relative: true
     source: path
     version: "0.0.1"
@@ -207,7 +207,7 @@ packages:
   payment:
     dependency: transitive
     description:
-      path: "packages/payment"
+      path: "packages/features/payment"
       relative: true
     source: path
     version: "0.0.1"
@@ -222,7 +222,7 @@ packages:
   profile:
     dependency: transitive
     description:
-      path: "packages/profile"
+      path: "packages/features/profile"
       relative: true
     source: path
     version: "0.0.1"
@@ -242,7 +242,7 @@ packages:
   splash:
     dependency: "direct main"
     description:
-      path: "packages/splash"
+      path: "packages/features/splash"
       relative: true
     source: path
     version: "0.0.1"

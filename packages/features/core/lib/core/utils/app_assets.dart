@@ -1,12 +1,9 @@
 sealed class AppAssets {
   AppAssets._();
 
-  static const _assetPath =
-      '/Users/hager/Desktop/Delivery/delivery_app/assets/imgs';
-  static const _svgsPath =
-      '/Users/hager/Desktop/Delivery/delivery_app/assets/svgs';
-  static const _iconsPath =
-      '/Users/hager/Desktop/Delivery/delivery_app/assets/icons';
+  static const _assetPath = '/Users/hager/Desktop/Delivery/delivery_app/packages/core/assets/imgs';
+  static const _svgsPath = '/Users/hager/Desktop/Delivery/delivery_app/packages/core/assets/svgs';
+  static const _iconsPath = '/Users/hager/Desktop/Delivery/delivery_app/packages/core/assets/icons';
 
   static const logo = '$_svgsPath/logo.svg';
   static const box = '$_svgsPath/box.svg';
@@ -46,5 +43,4 @@ sealed class AppAssets {
   static const takeAPhotoIcon = '$_iconsPath/take-a-photo-icon.svg';
   static const hint = '$_iconsPath/hint.svg';
   static const knob = '$_iconsPath/knob.svg';
-
 }

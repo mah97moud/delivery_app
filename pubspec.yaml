@@ -11,9 +11,9 @@ dependencies:
     sdk: flutter
   flutter_screenutil: ^5.9.0
   splash:
-    path: packages/splash
+    path: packages/features/splash
   core:
-    path: packages/core
+    path: packages/features/core
   flutter_animate: ^4.2.0+1
 
 dev_dependencies:
@@ -21,18 +21,4 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-flutter:
-  uses-material-design: true
-
-  assets:
-    - /Users/hager/Desktop/Delivery/delivery_app/assets/
-
-  fonts:
-    - family: SF-Pro-Display
-      fonts:
-        - asset: assets/fonts/SF-Pro-Display/SF-Pro-Display-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/SF-Pro-Display/sf-pro-text-semibold.ttf
-          weight: 600
-        - asset: assets/fonts/SF-Pro-Display/SF-Pro-Display-Regular.ttf
-          weight: 400
+material_design: true
