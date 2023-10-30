@@ -1,9 +1,9 @@
 sealed class AppAssets {
   AppAssets._();
 
-  static const _assetPath = '/Users/hager/Desktop/Delivery/delivery_app/packages/core/assets/imgs';
-  static const _svgsPath = '/Users/hager/Desktop/Delivery/delivery_app/packages/core/assets/svgs';
-  static const _iconsPath = '/Users/hager/Desktop/Delivery/delivery_app/packages/core/assets/icons';
+  static const _assetPath = '/Users/hager/Desktop/Delivery/delivery_app/assets/imgs';
+  static const _svgsPath = '/Users/hager/Desktop/Delivery/delivery_app/assets/svgs';
+  static const _iconsPath = '/Users/hager/Desktop/Delivery/delivery_app/assets/icons';
 
   static const logo = '$_svgsPath/logo.svg';
   static const box = '$_svgsPath/box.svg';

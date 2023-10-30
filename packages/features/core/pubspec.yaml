@@ -34,15 +34,3 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  assets:
-    - assets/
-
-  fonts:
-    - family: SF-Pro-Display
-      fonts:
-        - asset: assets/fonts/SF-Pro-Display/SF-Pro-Display-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/SF-Pro-Display/sf-pro-text-semibold.ttf
-          weight: 600
-        - asset: assets/fonts/SF-Pro-Display/SF-Pro-Display-Regular.ttf
-          weight: 400
