@@ -31,3 +31,11 @@ get:
 		flutter pub get ; \
 		cd ../../ ; \
 	done
+
+build-runner:
+	for package in $(BUILD-RUNNER); do \
+		cd $${package} ; \
+		echo "Running build-runner on $${package}" ; \
+		flutter pub run build_runner build --delete-conflicting-outputs ; \
+		cd ../../ ; \
+	done
