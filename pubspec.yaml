@@ -15,6 +15,8 @@ dependencies:
   go_router: ^12.1.1
   flutter_svg: ^2.0.9
   equatable: ^2.0.5
+  firebase_core: ^2.22.0
+  firebase_storage: ^11.5.1
 
 dev_dependencies:
   flutter_lints: ^2.0.0
